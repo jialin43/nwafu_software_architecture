@@ -5,11 +5,11 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 public class Outputer extends Thread {
-    private TextLinePipe inPipe;
+    private Pipe inPipe;
     private BufferedWriter writer;
     private boolean firstWrite;
 
-    public Outputer(TextLinePipe in, String outputFile) {
+    public Outputer(Pipe in, String outputFile) {
         inPipe = in;
         try {
             writer = new BufferedWriter(new FileWriter(outputFile));

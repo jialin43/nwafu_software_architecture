@@ -20,7 +20,6 @@ public static void output(List<String> data,String url) {
 		}
 		bw.close();
 	} catch (IOException e) {
-		// TODO Auto-generated catch block
 		e.printStackTrace();
 	}
 	

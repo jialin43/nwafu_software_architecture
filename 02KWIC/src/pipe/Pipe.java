@@ -1,13 +1,12 @@
 package pipe;
 
-public class TextLinePipe {
+public class Pipe {
     private String pipe[];
     private int readIndex;
     private int num_now;
-
     private boolean isWork;
 
-    public TextLinePipe() {
+    public Pipe() {
         pipe = new String[5];
         readIndex = 0;
         num_now = 0;

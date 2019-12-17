@@ -4,11 +4,11 @@ import java.util.ArrayList;
 
 public class Sorter extends Thread {
 
-    TextLinePipe inPipe;
-    TextLinePipe outPipe;
+    Pipe inPipe;
+    Pipe outPipe;
     ArrayList<String> sortedLines;
 
-    public Sorter(TextLinePipe in, TextLinePipe out) {
+    public Sorter(Pipe in, Pipe out) {
         inPipe = in;
         outPipe = out;
         sortedLines = new ArrayList<String>();

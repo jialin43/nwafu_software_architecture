@@ -1,10 +1,10 @@
 package pipe;
 
 public class Swapper extends Thread {
-    TextLinePipe inPipe;
-    TextLinePipe outPipe;
+    Pipe inPipe;
+    Pipe outPipe;
 
-    public Swapper(TextLinePipe in, TextLinePipe out) {
+    public Swapper(Pipe in, Pipe out) {
         inPipe = in;
         outPipe = out;
     }

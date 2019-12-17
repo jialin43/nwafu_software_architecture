@@ -6,9 +6,9 @@ import java.io.IOException;
 
 public class Inputer extends Thread {
     private BufferedReader reader;
-    private TextLinePipe outPipe;
+    private Pipe outPipe;
 
-    public Inputer(String inputFile, TextLinePipe out) {
+    public Inputer(String inputFile, Pipe out) {
         try {
             reader = new BufferedReader(new FileReader(inputFile));
         } catch (IOException e) {
@@ -17,7 +17,6 @@ public class Inputer extends Thread {
         }
         outPipe = out;
     }
-
     @Override
     public void run() {
         while (!outPipe.isWork()) {}
